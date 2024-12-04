@@ -6,13 +6,12 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="py-4 inset-0 sticky w-full z-50 top-0 bg-background/60 border-b border-border">
+    <header className="py-4 inset-0 sticky w-full z-50 top-0 bg-background/60">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <Icon name="logo" height={44} width={44} />
+            <Icon name="logo" height={34} width={34} />
           </div>
-
           <nav>
             <ul className="flex items-center gap-10 text-sm">
               <li className="hover:text-blue transition ease-in">
@@ -34,9 +33,7 @@ export default function Header() {
           </nav>
           <div className="flex items-center gap-4">
             <ModeToggle />
-            <Button className="text-white" size="lg">
-              Resume
-            </Button>
+            <Button className="text-white">Resume</Button>
           </div>
         </div>
       </div>
